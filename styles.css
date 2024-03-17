@@ -1,73 +1,73 @@
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f0f0f0;
-        /* background-image: url('https://source.unsplash.com/1600x1000?Nature/Mountains/oceans/skys'); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 0; /* Remove default body margin */
-        padding: 0; /* Remove default body padding */
-    }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* background-image: url('https://source.unsplash.com/1600x1000?Nature/Mountains/oceans/skys'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
 
+.stopwatch {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity to make the stopwatch more readable */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50vh auto 0; /* Centering vertically using the top margin */
+    transform: translateY(-50%); /* Centering trick */
+}
+
+.display {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.lapTime {
+    font-size: 1.2em;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
     .stopwatch {
-        margin-top: 50px;
-        background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity to make the stopwatch more readable */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        max-width: 400px;
-        margin: 50vh auto 0; /* Centering vertically using the top margin */
-        transform: translateY(-50%); /* Centering trick */
+        padding: 10px;
     }
 
     .display {
-        font-size: 4em;
-        margin-bottom: 20px;
-        color: #333;
+        font-size: 3em;
     }
 
     button {
-        margin: 5px;
-        padding: 10px 20px;
-        font-size: 1em;
-        cursor: pointer;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+        padding: 8px 16px;
     }
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    .laps {
-        list-style-type: none;
-        padding: 0;
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    .lapTime {
-        font-size: 1.2em;
-        padding: 5px;
-        background-color: #f0f0f0;
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
-
-    @media only screen and (max-width: 500px) {
-        .stopwatch {
-            padding: 10px;
-        }
-
-        .display {
-            font-size: 3em;
-        }
-
-        button {
-            padding: 8px 16px;
-        }
-    }
+}
