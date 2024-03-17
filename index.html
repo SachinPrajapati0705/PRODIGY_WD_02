@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('https://source.unsplash.com/1600x500?Nature/Mountains/oceans/skys'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="stopwatch">
+        <svg id="clock" viewBox="0 0 100 100" width="200" height="200">
+            <!-- Clock Face -->
+            <circle cx="50" cy="50" r="45" fill="#fff" stroke="#333" stroke-width="2" />
+            
+            <!-- Circular Progress Bar -->
+            <circle id="progress" cx="50" cy="50" r="45" fill="none" stroke="#007bff" stroke-width="5" stroke-dasharray="0, 283" transform="rotate(-90 50 50)" />
+            
+            <!-- Hour Hand -->
+            <line id="hourHand" x1="50" y1="50" x2="50" y2="30" stroke="#333" stroke-width="3" />
+        
+            <!-- Minute Hand -->
+            <line id="minuteHand" x1="50" y1="50" x2="50" y2="25" stroke="#333" stroke-width="2" />
+        
+            <!-- Second Hand -->
+            <line id="secondHand" x1="50" y1="50" x2="50" y2="20" stroke="red" stroke-width="1" />
+        </svg>
+        
+        <div class="display">00:00:00</div>
+        <button class="start">Start</button>
+        <button class="pause">Pause</button>
+        <button class="reset">Reset</button>
+        <button class="lap">Lap</button>
+        <ul class="laps"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
